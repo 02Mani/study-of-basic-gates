@@ -64,16 +64,15 @@ Y= A⊕B
 
 **PROGRAM**
 ~~~
-module EXP1(a,b,f1,f2,f3,f4,f5,f6,f7);
+module exp1(a,b,c,d,e,x,y,z);
 input a,b;
-output f1,f2,f3,f4,f5,f6,f7;
-assign f1=a&b;
-assign f2=a|b;
-assign f3=~a;
-assign f4=~f1;
-assign f5=~f2;
-assign f6=a^b;
-assign f7=~(a^b);
+output c,d,e,x,y,z;
+and (c,a,b);
+or(d,a,b);
+xor(e,a,b);
+nand(x,a,b);
+nor(y,a,b);
+xnor(z,a,b);
 endmodule
 ~~~
 
@@ -88,10 +87,11 @@ Program for logic gates and verify its truth table in quartus using Verilog prog
 
 *RTL realization Output:* 
 
-![exp1(1)de](https://github.com/user-attachments/assets/e2062fdf-6534-4bbe-8e24-4aad80e3bf80)
+![exp1](https://github.com/user-attachments/assets/53346580-428a-440f-82b3-d3553309f6b7)
+
 
 *RTL*
-![exp1(2)image](https://github.com/user-attachments/assets/51080614-49fe-4d9e-8607-ed01c6abff46)
+<img width="1907" height="1134" alt="Screenshot 2026-02-12 161214" src="https://github.com/user-attachments/assets/4d0dbb5f-9406-45ee-9d50-97f88324c1a2" />
 
 
 *Result:*
